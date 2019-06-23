@@ -17,6 +17,7 @@ object sparktest {
     def testmap(x:Int):Int={
       x*3
     }
+	sdf
     var b = rdd.map(x => x * 3)
     rdd.map(testmap).collect().foreach(s=>println(s))
     val ints = b.collect()
